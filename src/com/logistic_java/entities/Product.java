@@ -7,17 +7,15 @@ public class Product {
 	private double precoUnitario; 
 	private Cliente cliente; 
 	
-	public Product(String n, int q, double pu) {
-		this.number = n; 
-		this.quantidade = q; 
-		this.precoUnitario = pu; 
-	}
-	
 	public Product(String n, int q, double pu, Cliente c) {
 		this.number = n; 
 		this.quantidade = q; 
 		this.precoUnitario = pu; 
 		this.cliente = c; 
+	}
+		
+	public Product(String n, int q, double pu) { 
+		this(n, q, pu, null); 
 	}
 	
 	private double precoTotal() { 
