@@ -26,11 +26,11 @@ public class Product {
 	public String toString() {
 		
 		return String.format("Product"
-				+ "Number: %s"
-				+ "Quantidade: %d"
-				+ "Preço Unitário: R$%.2f"
-				+ "Preço Total: R$%.2f"
-				+ "Cliente: " + cliente, 
+				+ "\nNumber: %s"
+				+ "\nQuantidade: %d"
+				+ "\nPreço Unitário: R$%.2f"
+				+ "\nPreço Total: R$%.2f"
+				+ "\nCliente: " + cliente, 
 				number, quantidade, precoUnitario, precoTotal(), cliente); 
 	}
 }

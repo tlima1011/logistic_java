@@ -7,7 +7,26 @@ public class ClienteJuridica extends Cliente{
 	
 	public ClienteJuridica(String n) {
 		super(n);
-		// TODO Auto-generated constructor stub
+		ie = "N/A"; 
+		cnpj = "N/A"; 
 	}
 	
+	public ClienteJuridica(String n, String i) {
+		super(n); 
+		ie = i; 
+		cnpj = "N/A"; 
+	}
+	
+	public ClienteJuridica(String n, String i, String c) {
+		super(n); 
+		ie = i; 
+		cnpj = c;  
+	}
+
+	@Override
+	public String toString() {
+		
+		return String.format("Pessoa Juridica:\n%s\n%s", cnpj, ie);
+		
+	}
 }
